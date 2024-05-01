@@ -9,10 +9,10 @@
 format the reg file by press Shift+Alt+F；
 
 ### before format
-![before](screenshots/before.png)
+![before](https://github.com/charygao/regformatter-vscode/raw/main/screenshots/before.png)
 
 ### after format
-![after](screenshots/after.png)
+![after](https://github.com/charygao/regformatter-vscode/raw/main/screenshots/after.png)
 
 > other features see [reg Extension]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg）
 
