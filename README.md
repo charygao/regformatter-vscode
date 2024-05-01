@@ -1,72 +1,35 @@
 # regformatter README
 
-This is the README for your extension "regformatter". After writing up a brief description, we recommend including the following sections.
+"regformatter" is base on [reg Extension]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg）
+"regformatter" 基于  [reg 扩展]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg） 修改而来。
 
-> base on [reg Extension]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg）
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+format the reg file by press Shift+Alt+F；
 
-For example if there is an image subfolder under your extension project workspace:
+### before format
+![before](screenshots/before.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+### after format
+![after](screenshots/after.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> other features see [reg Extension]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg）
 
-## Requirements
+## History
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### 0.0.1 (2024-05-01)
 
-## Extension Settings
+Initial release, bug report in：[github issues page](https://github.com/charygao/regformatter-vscode/issues)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+初版发布，bug较多，欢迎提issue。
 
 ---
 
 ## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
+* [source code in github](https://github.com/charygao/regformatter-vscode/)
+* [my blog in china](https://www.cnblogs.com/Chary)
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
