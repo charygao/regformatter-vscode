@@ -3,6 +3,7 @@
   "displayName": "regformatter",
   "description": "",
   "repository":"https://github.com/charygao/regformatter-vscode",
+  "publisher": "CharyGao",
   "version": "0.0.1",
   "icon": "icon.png",
   "engines": {
