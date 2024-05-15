@@ -17,6 +17,7 @@ type RegContent = {
 };
 
 const formatRegex = /\s*(;[;\!@#\$%\^&\*\(\)\-\+\\\/\[\]\{\}]*)\s*/g;
+const hKeyRegex = /\[-?HK.*?\]/g;//reg 匹配[-HK……] 的项目 才认定为HKEY，
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -106,7 +107,7 @@ export function activate(context: vscode.ExtensionContext) {
 					regHeader = nextLineText.replaceAll(formatRegex, (match, group1) => " " + group1 + " ").trim() + "\n";
 					continue;
 				}
-				if (nextLineText.match(/\[.*?\]/g)) {
+				if (nextLineText.match(hKeyRegex)) {
 					//reg [] 项目,持续读完到 or 下一个[]
 					//console.log(nextLineText + " :is []!");
 
@@ -123,7 +124,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 						if (nextLineText.length === 0) { continue; }//跳过空行 
 
-						if (nextLineText.match(/\[.*?\]/g)) {
+						if (nextLineText.match(hKeyRegex)) {
 							if (nextLineText.startsWith(regContent.key.replaceAll(/\].*/g, ""))
 								&& regContent.subkey?.length === 0//下一个非空行[]是本[]的父类 前提是 子项也是空！
 							) {//下一个非空行[]是本[]的父类
@@ -155,7 +156,7 @@ export function activate(context: vscode.ExtensionContext) {
 									multiSubKeyLine += nextLineText.substring(0, nextLineText.length - 1);
 								} else {
 									//已经不是 \结尾,判断是 读完了 还是读到了[]?
-									if (nextLineText.match(/\[.*?\]/g)) {
+									if (nextLineText.match(hKeyRegex)) {
 										--i;//读到了[] 回退，读过头了
 									} else {
 										multiSubKeyLine += nextLineText;// 读完了 把最后的一行也加上
