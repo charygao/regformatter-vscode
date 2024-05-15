@@ -1,7 +1,8 @@
 # regformatter README
 
-"regformatter" is base on [reg Extension]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg）
-"regformatter" 基于  [reg 扩展]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg） 修改而来。
+> - "regformatter" is base on [reg Extension]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg）
+>
+> - "regformatter" 基于  [reg 扩展]（https://marketplace.visualstudio.com/items?itemName=ionutvmi.reg） 修改而来。
 
 
 ## Features
