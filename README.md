@@ -25,6 +25,9 @@ Initial release, bug report in：[github issues page](https://github.com/charyga
 
 初版发布，bug较多，欢迎提issue。
 
+### 0.0.2 (2024-05-15)
+调整 header 判定标准为 ：reg 匹配[-HK……] 才是 [HKEY-] 头，方式 value中包含[]；
+
 ---
 
 ## Following extension guidelines
