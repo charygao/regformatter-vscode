@@ -16,7 +16,8 @@ type RegContent = {
 	subkey?: Array<string>;//?表示非必须
 };
 
-const formatRegex = /\s*(;[;\!@#\$%\^&\*\(\)\-\+\\\/\[\]\{\}]*)\s*/g;
+// const formatRegex = /\s*(;[;\!@#\$%\^&\*\(\)\-\+\\\/\[\]\{\}]*)\s*/g;//:
+const formatRegex = /\s*(;[;\!\*\?]*)\s*/g;//;;、;!、;?、;*  特殊对待
 const hKeyRegex = /\[-?HK.*?\]/g;//reg 匹配[-HK……] 的项目 才认定为HKEY，
 
 // This method is called when your extension is activated

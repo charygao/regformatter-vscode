@@ -27,6 +27,10 @@ format the reg file by press Shift+Alt+F；
 - Adjust the header criteria to "Is the content match the `[-HK......]` partten,whitch should be the [HKEY-] header. 
 Just in case the `[]` contains in a subKey value;
 
+### 0.0.3 (2024-06-23)
+
+- fix [/issues/1](https://github.com/charygao/regformatter-vscode/issues/1) ;
+
 ---
 
 ## Following extension guidelines

@@ -4,7 +4,7 @@
   "description": "",
   "repository":"https://github.com/charygao/regformatter-vscode",
   "publisher": "CharyGao",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.88.0"
